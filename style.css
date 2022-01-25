@@ -1,0 +1,28 @@
+.main-menu{
+    background: rgb(247, 142, 142);
+}
+.main-menu ul li{
+    display: inline-block;
+}
+.response-menu{
+    display: none;
+    width: 250px;
+    background: rgb(166, 101, 226);
+    position: fixed;
+    left: -230px;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.response-menu:hover{
+    left: 0;
+}
+@media screen and (max-width:600px) {
+    .response-menu{
+        display: block;
+    }
+    .main-menu{
+        display: none;
+    }
+}
